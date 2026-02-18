@@ -1,18 +1,18 @@
 
-rahat@Rahad MINGW64 ~OneDriveDesktopLabSE
-$ git config --global user.name Rahad
+rahat@Rahad MINGW64 ~/OneDrive/Desktop/LabSE
+$ git config --global user.name "Rahad"
 
-rahat@Rahad MINGW64 ~OneDriveDesktopLabSE
+rahat@Rahad MINGW64 ~/OneDrive/Desktop/LabSE
 $ git config --global user.email rahad.smrahatul@gmail.com
 
-rahat@Rahad MINGW64 ~OneDriveDesktopLabSE
+rahat@Rahad MINGW64 ~/OneDrive/Desktop/LabSE
 $ git cinfig --global --list
-git 'cinfig' is not a git command. See 'git --help'.
+git: 'cinfig' is not a git command. See 'git --help'.
 
 The most similar command is
         config
 
-rahat@Rahad MINGW64 ~OneDriveDesktopLabSE
+rahat@Rahad MINGW64 ~/OneDrive/Desktop/LabSE
 $ git config --global --list
 filter.lfs.clean=git-lfs clean -- %f
 filter.lfs.smudge=git-lfs smudge -- %f
@@ -21,38 +21,101 @@ filter.lfs.required=true
 user.name=Rahad
 user.email=rahad.smrahatul@gmail.com
 
-rahat@Rahad MINGW64 ~OneDriveDesktopLabSE
+rahat@Rahad MINGW64 ~/OneDrive/Desktop/LabSE
 $ git init
-Initialized empty Git repository in CUsersrahatOneDriveDesktopLabSE.git
+Initialized empty Git repository in C:/Users/rahat/OneDrive/Desktop/LabSE/.git/
 
-rahat@Rahad MINGW64 ~OneDriveDesktopLabSE (master)
-$ git remote add origin httpsgithub.comsmrahatulrahadSE_lab
+rahat@Rahad MINGW64 ~/OneDrive/Desktop/LabSE (master)
+$ git remote add origin https://github.com/smrahatulrahad/SE_lab
 
+rahat@Rahad MINGW64 ~/OneDrive/Desktop/LabSE (master)
+$ git add,
+git: 'add,' is not a git command. See 'git --help'.
 
+The most similar command is
+        add
 
-rahat@Rahad MINGW64 ~OneDriveDesktopLabSE (master)
+rahat@Rahad MINGW64 ~/OneDrive/Desktop/LabSE (master)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+rahat@Rahad MINGW64 ~/OneDrive/Desktop/LabSE (master)
 $ git add .
 
+rahat@Rahad MINGW64 ~/OneDrive/Desktop/LabSE (master)
+$ git add commit -m "new file added"
+error: unknown switch `m'
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --[no-]dry-run    dry run
+    -v, --[no-]verbose    be verbose
+
+    -i, --[no-]interactive
+                          interactive picking
+    -p, --[no-]patch      select hunks interactively
+    -U, --unified <n>     generate diffs with <n> lines context
+    --inter-hunk-context <n>
+                          show context between diff hunks up to the specified number of lines
+    -e, --[no-]edit       edit current diff and apply
+    -f, --[no-]force      allow adding otherwise ignored files
+    -u, --[no-]update     update tracked files
+    --[no-]renormalize    renormalize EOL of tracked files (implies -u)
+    -N, --[no-]intent-to-add
+                          record only the fact that the path will be added later
+    -A, --[no-]all        add changes from all tracked and untracked files
+    --[no-]ignore-removal ignore paths removed in the working tree (same as --no-all)
+    --[no-]refresh        don't add, only refresh the index
+    --[no-]ignore-errors  just skip files which cannot be added because of errors
+    --[no-]ignore-missing check if - even missing - files are ignored in dry run
+    --[no-]sparse         allow updating entries outside of the sparse-checkout cone
+    --[no-]chmod (+|-)x   override the executable bit of the listed files
+    --[no-]pathspec-from-file <file>
+                          read pathspec from file
+    --[no-]pathspec-file-nul
+                          with --pathspec-from-file, pathspec elements are separated with NUL character
 
 
-rahat@Rahad MINGW64 ~OneDriveDesktopLabSE (master)
-$ git commit -m new file added
+rahat@Rahad MINGW64 ~/OneDrive/Desktop/LabSE (master)
+$ git commit -m "new file added"
 [master (root-commit) aa458b7] new file added
  2 files changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 test 1.txt
  create mode 100644 test 2.txt
 
-rahat@Rahad MINGW64 ~OneDriveDesktopLabSE (master)
+rahat@Rahad MINGW64 ~/OneDrive/Desktop/LabSE (master)
 $ git push -u origin master
-Enumerating objects 3, done.
-Counting objects 100% (33), done.
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
 Delta compression using up to 20 threads
-Compressing objects 100% (22), done.
-Writing objects 100% (33), 222 bytes  222.00 KiBs, done.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 222 bytes | 222.00 KiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
-To httpsgithub.comsmrahatulrahadSE_lab
-  [new branch]      master - master
-branch 'master' set up to track 'originmaster'.
+To https://github.com/smrahatulrahad/SE_lab
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
 
-rahat@Rahad MINGW64 ~OneDriveDesktopLabSE (master)
+rahat@Rahad MINGW64 ~/OneDrive/Desktop/LabSE (master)
+$ git add command.txt
+
+rahat@Rahad MINGW64 ~/OneDrive/Desktop/LabSE (master)
+$ git commit -m "new file"
+[master c4f073b] new file
+ 1 file changed, 58 insertions(+)
+ create mode 100644 command.txt
+
+rahat@Rahad MINGW64 ~/OneDrive/Desktop/LabSE (master)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 883 bytes | 883.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/smrahatulrahad/SE_lab
+   aa458b7..c4f073b  master -> master
+
+rahat@Rahad MINGW64 ~/OneDrive/Desktop/LabSE (master)
 $
