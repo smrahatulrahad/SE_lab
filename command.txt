@@ -1,0 +1,58 @@
+
+rahat@Rahad MINGW64 ~OneDriveDesktopLabSE
+$ git config --global user.name Rahad
+
+rahat@Rahad MINGW64 ~OneDriveDesktopLabSE
+$ git config --global user.email rahad.smrahatul@gmail.com
+
+rahat@Rahad MINGW64 ~OneDriveDesktopLabSE
+$ git cinfig --global --list
+git 'cinfig' is not a git command. See 'git --help'.
+
+The most similar command is
+        config
+
+rahat@Rahad MINGW64 ~OneDriveDesktopLabSE
+$ git config --global --list
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+user.name=Rahad
+user.email=rahad.smrahatul@gmail.com
+
+rahat@Rahad MINGW64 ~OneDriveDesktopLabSE
+$ git init
+Initialized empty Git repository in CUsersrahatOneDriveDesktopLabSE.git
+
+rahat@Rahad MINGW64 ~OneDriveDesktopLabSE (master)
+$ git remote add origin httpsgithub.comsmrahatulrahadSE_lab
+
+
+
+rahat@Rahad MINGW64 ~OneDriveDesktopLabSE (master)
+$ git add .
+
+
+
+rahat@Rahad MINGW64 ~OneDriveDesktopLabSE (master)
+$ git commit -m new file added
+[master (root-commit) aa458b7] new file added
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test 1.txt
+ create mode 100644 test 2.txt
+
+rahat@Rahad MINGW64 ~OneDriveDesktopLabSE (master)
+$ git push -u origin master
+Enumerating objects 3, done.
+Counting objects 100% (33), done.
+Delta compression using up to 20 threads
+Compressing objects 100% (22), done.
+Writing objects 100% (33), 222 bytes  222.00 KiBs, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To httpsgithub.comsmrahatulrahadSE_lab
+  [new branch]      master - master
+branch 'master' set up to track 'originmaster'.
+
+rahat@Rahad MINGW64 ~OneDriveDesktopLabSE (master)
+$
